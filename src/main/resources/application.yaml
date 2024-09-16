@@ -1,1 +1,15 @@
 app.kafka.bootstrap-servers: localhost:9092
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        default_schema: schema_1
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/learn
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver

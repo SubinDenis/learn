@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 import java.time.Instant
 
-@RestController
+//@RestController
 @RequestMapping("/api")
 class TestController(
     val template: KafkaTemplate<String, String>

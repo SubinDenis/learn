@@ -3,6 +3,7 @@ plugins {
 	kotlin("plugin.spring") version "1.9.25"
 	id("org.springframework.boot") version "3.3.3"
 	id("io.spring.dependency-management") version "1.1.6"
+	kotlin("plugin.jpa") version "1.9.25"
 }
 
 group = "com.example"
@@ -20,8 +21,8 @@ repositories {
 
 dependencies {
 	implementation("io.github.microutils:kotlin-logging-jvm:2.0.11")
-//	implementation("ch.qos.logback:logback-classic:1.2.6")
-
+	implementation("org.postgresql:postgresql:42.7.4")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.boot:spring-boot-starter-web")
