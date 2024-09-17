@@ -1,4 +1,4 @@
-package com.example.demo.entity
+package com.example.demo.model.entity
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
@@ -18,6 +18,9 @@ class MovieEntity(
 
     @Column(nullable = false)
     val filmedAt: Instant,
+
+    @Column(nullable = false)
+    val producer: String,
 
     @Column(nullable = false)
     val createdAt: Instant,
